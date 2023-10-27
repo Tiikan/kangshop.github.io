@@ -1,0 +1,1610 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --background_header: gray;
+  --backgroud_hover: #5dade2;
+  --color_text: white;
+  --color_ping: #e67e22;
+  --color_picker: #7d3c98;
+  --color_svay: #17a589;
+}
+body {
+  background-color: white;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 10px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--background_header);
+  box-shadow: 0 1px 2px var(--color_ping);
+  z-index: 99;
+}
+.box_header {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  padding: 0 30px;
+}
+.all_wrappe {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.wapper .home {
+  background-color: var(--backgroud_hover);
+  box-shadow: 5px 5px 10px var(--backgroud_hover);
+}
+.wapper li a:hover {
+  box-shadow: 5px 5px 10px var(--backgroud_hover);
+}
+.wapper {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.logo img {
+  position: relative;
+  width: 50%;
+}
+.wapper li {
+  list-style: none;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+.wapper li a {
+  font-size: 20px;
+  font-family: "khmer";
+  color: var(--color_text);
+  background-color: grey;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.all_wrappe {
+  justify-content: space-between;
+}
+.all_wrappe .search-box {
+  position: relative;
+  width: 50px;
+}
+.all_wrappe .search-box i {
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 25px;
+  color: var(--color_text);
+  font-weight: 500;
+  cursor: pointer;
+  translate: all 0.3s ease;
+}
+.all_wrappe .search-box input {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+.all_wrappe .search-box .input-box {
+  position: absolute;
+  right: calc(100% - 40px);
+  padding: 10px 20px;
+  background: #3e8da8;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+.all_wrappe.showInput .search-box .input-box {
+  opacity: 1;
+  pointer-events: auto;
+  background: #3e8da8;
+}
+.all_wrappe .sidebar-logo {
+  display: none;
+}
+.all_wrappe .bx-menu {
+  display: none;
+}
+/* all_sidebar */
+.all_sidebar {
+  width: 100%;
+  margin-top: 130px;
+  padding: 10px 20px;
+}
+.firt_sidebar {
+  display: flex;
+  padding: 0 35px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+.case-text {
+  background-image: url("https://img.freepik.com/free-vector/lemons-isolated-white-fresh-juicy-yellow-fruits-cut-half-whole_88138-132.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 80%;
+  padding: 0 10px;
+  height: 300px;
+}
+.case-text .title p {
+  font-size: 50px;
+  font-family: "Bayon";
+  font-weight: 700;
+}
+.case-text .title2 p {
+  font-size: 15px;
+  font-family: "battambang";
+  font-weight: 200;
+}
+.case-text .text_bottom button {
+  margin-top: 10px;
+  background-color: #e67e22;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px var(--color_ping);
+}
+.case-text .text_bottom a {
+  font-size: 20px;
+  font-family: "battambang";
+  font-weight: 600;
+}
+.firt_sidebar .soda_img img {
+  width: 250px;
+}
+.case_soda {
+  display: flex;
+  width: 100%;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+.aletf {
+  position: absolute;
+  text-align: left;
+  margin: auto;
+  background-color: gray;
+  width: 80px;
+  border-radius: 0px 5px 50px;
+  box-shadow: 5px 5px 10px var(--color_ping);
+}
+.aletf p {
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 20px;
+  font-family: cursive;
+  color: aliceblue;
+}
+.case_soda .img_watesoda img {
+  width: 950px;
+  height: 500px;
+  border: 2px solid black;
+}
+.case_soda .iconlemon .number1 {
+  padding: 10px 20px;
+}
+.case_soda .iconlemon .number1 h2 {
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+.case_soda .iconlemon .number1 p {
+  font-size: 15px;
+  font-family: "battambang";
+  font-weight: 600;
+}
+.case_product {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.caption_product {
+  margin: auto;
+  max-width: 500px;
+  justify-content: center;
+  text-align: center;
+}
+.case_movon {
+  padding: 10px 20px;
+  display: flex;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.caption_product .case_movon img {
+  width: 100px;
+  margin-left: 390px;
+}
+.caption_product .case_movon h3 {
+  margin-top: 90px;
+  position: absolute;
+  font-size: 45px;
+  font-family: "Bayon";
+  font-weight: 700;
+}
+.caption_product .case_movon p {
+  font-size: 15px;
+  font-family: "battambang";
+  font-weight: 200;
+}
+.founder_buttom {
+  margin-top: 60px;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.founder_buttom .asssec_buttomm {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.asssec_buttomm .boxproduct {
+  background: #fff;
+  cursor: pointer;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid var(--bg--color);
+}
+.boxproduct:hover {
+  box-shadow: 5px 5px 5px var(--color-info-light);
+}
+.boxproduct .imgProduct img {
+  width: 350px;
+  height: 350px;
+  border-radius: 8px;
+}
+.textparagraph i {
+  color: yellowgreen;
+  font-size: 20px;
+}
+.textparagraph i span {
+  font-size: 10px;
+  font-family: cursive;
+  font-weight: 200;
+}
+.textparagraph .name_pruduct {
+  color: black;
+  font-size: 12px;
+  font-family: Georgia, serif;
+}
+.textparagraph .totalprice {
+  color: #e67e22;
+  font-size: 15px;
+  font-family: cursive;
+  margin-bottom: 3px;
+}
+.textparagraph .aboutMe {
+  padding: 5px 10px;
+  background: rgba(130, 146, 130, 0.3);
+  border-radius: 5px;
+}
+.textparagraph .aboutMe a i {
+  font-size: 15px;
+  color: rgb(69, 98, 142);
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+}
+.textparagraph .aboutMe:hover {
+  background-color: rgb(139, 46, 130);
+}
+
+/* about */
+.case_about {
+  padding: 30px 30px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.case_about .case_boxboutus {
+  justify-content: space-around;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.case_boxboutus .img_about img {
+  width: 100%;
+  border: 2px solid black;
+  box-shadow: 0px 5px 10px var(--backgroud_hover);
+}
+.case_boxboutus .casetext_about {
+  text-align: left;
+  padding: 0 30px;
+}
+.casetext_about .text_about {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "khmer";
+}
+.casetext_about .text2_about {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "battambang";
+  margin-bottom: 10px;
+}
+.casetext_about button {
+  padding: 10px 10px;
+  background-color: #e67e22;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px var(--color_ping);
+}
+.casetext_about button a {
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "battambang";
+  margin-bottom: 10px;
+}
+/* about imgage */
+.case_boxboutus .image1 img {
+  width: 350px;
+  height: 300px;
+}
+.case_boxboutus .image2 img {
+  width: 700px;
+  height: 250px;
+  box-shadow: 0px 5px 10px var(--backgroud_hover);
+  border: 2px solid black;
+}
+/* out story */
+.ourstory {
+  text-align: center;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+}
+.text_ourstory p {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "khmer";
+}
+.paragraph p {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "battambang";
+  margin-bottom: 10px;
+}
+.ourstory .fotter_story {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.fotter_story .box_outstoryimg {
+  background-color: white;
+  cursor: pointer;
+  flex-direction: column;
+  width: 440px;
+}
+.box_outstoryimg .image_outstory img {
+  width: 440px;
+  height: 440px;
+  box-shadow: 0 5px 10px var(--color_ping);
+  border: 1px solid black;
+}
+.image_outstory .title_img p {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: "battambang";
+  margin-bottom: 10px;
+}
+.box_outstoryimg .box_paragraph {
+  position: relative;
+  padding: 5px 20px;
+  text-align: center;
+  justify-content: center;
+}
+.box_paragraph .text_dite {
+  justify-content: space-between;
+  display: flex;
+}
+.text_dite p {
+  font-size: 10px;
+  font-weight: 100;
+}
+.text_dite button a {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  background-color: #e67e22;
+  border: 1px solid black;
+  box-shadow: 0 5px 10px chocolate;
+}
+/* recipes */
+.recipes {
+  text-align: center;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  margin-top: 30px;
+}
+.case_recipes {
+  width: 80%;
+  margin: auto;
+  background-image: url("https://ucarecdn.com/6db7b861-c53a-42ee-916c-6f2a1aabdd3b/-/preview/O8Sz5GhC");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0 5px 20px chocolate;
+  padding: 0 10px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.box_sub {
+  width: 700px;
+  padding: 20px 30px;
+}
+.box_sub .text_recipes {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: "khmer";
+  color: darkblue;
+}
+.box_sub input {
+  font-size: 20px;
+  margin-right: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px var(--color_picker);
+}
+.box_sub button a {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "battambang";
+}
+.box_sub button {
+  padding: 2px 15px;
+  background-color: #e67e22;
+  border: 1px solid black;
+  box-shadow: 0 5px 10px chocolate;
+  border-radius: 5px;
+}
+.box_sub button:hover {
+  background-color: var(--backgroud_hover);
+}
+/* footer_case */
+.footer_case {
+  background-color: #6f827d;
+  position: relative;
+  margin-top: 100px;
+  border: 2px solid black;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+.case_website img {
+  width: 100px;
+}
+.case_website .paragrah_footer {
+  font-size: 15px;
+  font-weight: 200;
+  font-family: "battambang";
+  color: white;
+}
+.case_website .footer_icon a i {
+  font-size: 20px;
+  color: rgb(249, 243, 248);
+  background-color: rgb(47, 56, 180);
+  border-radius: 50px;
+  padding: 5px 5px;
+  margin-right: 5px;
+}
+.footer_icon a i:hover {
+  box-shadow: 5px 0px 10px chartreuse;
+}
+.case_cotact {
+  display: flex;
+  position: relative;
+}
+.box_menuleft {
+  padding: 0px 150px;
+}
+.box_menuleft h1 {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "battambang";
+  color: white;
+}
+.box_menuleft a p {
+  font-size: 15px;
+  font-weight: 200;
+  padding: 5px;
+  font-family: "battambang";
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: white;
+}
+.box_menuleft a p:hover {
+  box-shadow: 0 10px 5px coral;
+}
+.box_menuright h1 {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: "battambang";
+  color: white;
+}
+.box_menuright a i {
+  display: flex;
+  font-size: 20px;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: rgb(48, 19, 164);
+}
+.box_menuright a i p {
+  font-size: 15px;
+  font-weight: 200;
+  padding: 5px;
+  font-family: "battambang";
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: white;
+}
+@media screen and (max-width: 920px) {
+  .header {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .aletf {
+    position: absolute;
+    text-align: left;
+    margin: auto;
+    background-color: gray;
+    width: 80px;
+    border-radius: 0px 5px 50px;
+    box-shadow: 5px 5px 10px var(--color_ping);
+  }
+  .case_soda .img_watesoda img {
+    width: 650px;
+    height: 300px;
+  }
+  .case_soda .iconlemon .number1 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .case_soda .iconlemon .number1 p {
+    font-size: 10px;
+    font-family: "battambang";
+    font-weight: 600;
+  }
+  /* desing srean buttom 2 */
+  .case_movon {
+    padding: 10px 20px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .founder_buttom {
+    margin-top: 60px;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .founder_buttom .asssec_buttomm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .asssec_buttomm .boxproduct {
+    cursor: pointer;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid var(--bg--color);
+  }
+  .case_about .case_boxboutus {
+    justify-content: space-around;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .case_boxboutus .img_about img {
+    width: 100%;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px var(--backgroud_hover);
+  }
+  .case_boxboutus .casetext_about {
+    text-align: left;
+    padding: 0 30px;
+  }
+  .casetext_about .text_about {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "khmer";
+  }
+  .casetext_about .text2_about {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  .casetext_about button {
+    padding: 10px 10px;
+    background-color: #e67e22;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--color_ping);
+  }
+  .casetext_about button a {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  /* about imgage */
+  .case_boxboutus .image1 img {
+    width: 350px;
+    height: 300px;
+  }
+  .case_boxboutus .image2 img {
+    width: 700px;
+    height: 250px;
+    box-shadow: 0px 5px 10px var(--backgroud_hover);
+    border: 2px solid black;
+  }
+  /* desing srean about */
+  .case_boxboutus .img_about img {
+    width: 100%;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px var(--backgroud_hover);
+  }
+  .case_boxboutus .casetext_about {
+    text-align: left;
+    padding: 0 30px;
+  }
+  .casetext_about .text_about {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "khmer";
+  }
+  .casetext_about .text2_about {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  .casetext_about button {
+    padding: 10px 10px;
+    background-color: #e67e22;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--color_ping);
+  }
+  .casetext_about button a {
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  /* about imgage */
+  .case_boxboutus .image1 img {
+    width: 250px;
+    height: 200px;
+  }
+  .case_boxboutus .image2 img {
+    width: 400px;
+    height: 200px;
+    box-shadow: 0px 5px 10px var(--backgroud_hover);
+    border: 2px solid black;
+  }
+  /* ourstory */
+  .ourstory {
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+  }
+  .ourstory .fotter_story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .fotter_story .box_outstoryimg {
+    background-color: white;
+    cursor: pointer;
+    flex-direction: column;
+    width: 350px;
+  }
+  .box_outstoryimg .image_outstory img {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 5px 10px var(--color_ping);
+    border: 1px solid black;
+  }
+  /* //2222222222222222222222222222222 */
+  .box_sub {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  /* //footer */
+  .case_website .paragrah_footer {
+    font-size: 13px;
+    font-weight: 200;
+    font-family: "battambang";
+    color: white;
+  }
+  .case_website .footer_icon a i {
+    font-size: 13px;
+    color: rgb(249, 243, 248);
+    background-color: rgb(47, 56, 180);
+    border-radius: 50px;
+    padding: 5px 5px;
+    margin-right: 5px;
+  }
+  .box_menuleft {
+    padding: 0px 50px;
+  }
+  .box_menuleft h1 {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: "battambang";
+    color: white;
+  }
+  .box_menuleft a p {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 5px;
+    font-family: "battambang";
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  .box_menuleft a p:hover {
+    box-shadow: 0 10px 5px coral;
+  }
+  .box_menuright h1 {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: "battambang";
+    color: white;
+  }
+  .box_menuright a i {
+    display: flex;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: rgb(48, 19, 164);
+  }
+  .box_menuright a i p {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 5px;
+    font-family: "battambang";
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+@media screen and (max-width: 800px) {
+  .header {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .box_header {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .all_wrappe {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+  }
+  .logo img {
+    position: relative;
+    width: 40%;
+  }
+  .wapper li a {
+    font-size: 15px;
+    color: var(--color_text);
+    background-color: grey;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  /* /eeeeeeeeeeeeeeeeeeeeeeeeeeeee */
+  .firt_sidebar {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+  .case-text .title p {
+    font-size: 40px;
+    font-family: "Bayon";
+    font-weight: 700;
+  }
+  .case-text .title2 p {
+    font-size: 13px;
+    font-family: "battambang";
+    font-weight: 200;
+  }
+  .firt_sidebar .soda_img img {
+    width: 200px;
+  }
+  /* ffffffffffffffffffffffffff */
+  .case_soda {
+    display: block;
+    width: 80%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .case_soda .img_watesoda img {
+    width: 630px;
+    height: 300px;
+  }
+  .case_soda .iconlemon .number1 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .case_soda .iconlemon .number1 p {
+    font-size: 10px;
+    font-family: "battambang";
+    font-weight: 600;
+  }
+  .iconlemon {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+  /* desing srean buttom 2 */
+  .case_movon {
+    padding: 10px 20px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .caption_product .case_movon h3 {
+    font-size: 40px;
+    font-family: "Bayon";
+    font-weight: 700;
+  }
+  .caption_product .case_movon p {
+    font-size: 10px;
+    font-family: "battambang";
+    font-weight: 200;
+  }
+  .founder_buttom {
+    margin-top: 60px;
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .founder_buttom .asssec_buttomm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .asssec_buttomm .boxproduct {
+    cursor: pointer;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    border: 1px solid var(--bg--color);
+  }
+  .case_about .case_boxboutus {
+    justify-content: space-around;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .case_boxboutus .img_about img {
+    width: 80%;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px var(--backgroud_hover);
+  }
+  .case_boxboutus .casetext_about {
+    text-align: left;
+    padding: 0 30px;
+  }
+  .casetext_about .text_about {
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "khmer";
+  }
+  .casetext_about .text2_about {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  .casetext_about button {
+    padding: 10px 10px;
+    background-color: #e67e22;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--color_ping);
+  }
+  .casetext_about button a {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  /* about imgage */
+  .case_boxboutus .image1 img {
+    width: 350px;
+    height: 300px;
+  }
+  .case_boxboutus .image2 img {
+    width: 700px;
+    height: 250px;
+    box-shadow: 0px 5px 10px var(--backgroud_hover);
+    border: 2px solid black;
+  }
+  /* desing srean about */
+  .case_boxboutus .img_about img {
+    width: 100%;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px var(--backgroud_hover);
+  }
+  .case_boxboutus .casetext_about {
+    text-align: left;
+    padding: 0 30px;
+  }
+  .casetext_about .text_about {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "khmer";
+  }
+  .casetext_about .text2_about {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  .casetext_about button {
+    padding: 10px 10px;
+    background-color: #e67e22;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--color_ping);
+  }
+  .casetext_about button a {
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  /* about imgage */
+  .case_boxboutus .image1 img {
+    width: 250px;
+    height: 200px;
+  }
+  .case_boxboutus .image2 img {
+    width: 400px;
+    height: 200px;
+    box-shadow: 0px 5px 10px var(--backgroud_hover);
+    border: 2px solid black;
+  }
+  /* ourstory */
+  .ourstory {
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+  }
+  .ourstory .fotter_story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .fotter_story .box_outstoryimg {
+    background-color: white;
+    cursor: pointer;
+    flex-direction: column;
+    width: 300px;
+  }
+  .box_outstoryimg .image_outstory img {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 5px 10px var(--color_ping);
+    border: 1px solid black;
+  }
+  .text_ourstory p {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "khmer";
+  }
+  .image_outstory .title_img p {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  .text_dite p {
+    font-size: 7px;
+    font-weight: 100;
+  }
+  .text_dite button a {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: #e67e22;
+    border: 1px solid black;
+    box-shadow: 0 5px 10px chocolate;
+  }
+  .paragraph p {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  /* //2222222222222222222222222222222 */
+  .box_sub {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .box_sub .text_recipes {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "khmer";
+    color: darkblue;
+  }
+  .box_sub input {
+    font-size: 15px;
+    margin-right: 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--color_picker);
+  }
+  .box_sub button a {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: "battambang";
+  }
+  /* //footer */
+  .footer_case {
+    background-color: #6f827d;
+    position: relative;
+    margin-top: 100px;
+    border: 2px solid black;
+    width: 100%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+  }
+  .case_website .paragrah_footer {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: "battambang";
+    color: white;
+  }
+  .case_website .footer_icon a i {
+    font-size: 15px;
+    color: rgb(249, 243, 248);
+    background-color: rgb(47, 56, 180);
+    border-radius: 50px;
+    padding: 5px 5px;
+    margin-right: 5px;
+  }
+  .box_menuleft {
+    padding: 0px 50px;
+  }
+  .case_cotact {
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    margin-top: 30px;
+  }
+  .box_menuleft h1 {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: "battambang";
+    color: white;
+  }
+  .box_menuleft a p {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 5px;
+    font-family: "battambang";
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  .box_menuleft a p:hover {
+    box-shadow: 0 10px 5px coral;
+  }
+  .box_menuright h1 {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: "battambang";
+    color: white;
+  }
+  .box_menuright a i {
+    display: flex;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: rgb(48, 19, 164);
+  }
+  .box_menuright a i p {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 5px;
+    font-family: "battambang";
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+}
+@media screen and (max-width: 420px) {
+  .all_wrappe .bx-menu {
+    display: block;
+    font-size: 25px;
+  }
+  .all_wrappe .case_menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    text-align: left;
+    display: block;
+    max-width: 270px;
+    width: 100%;
+    background: var(--background_header);
+    line-height: 40px;
+    padding: 20px;
+    box-shadow: 0 5px 10px var(--color_text);
+    transition: all 0.5s ease;
+    z-index: 1000;
+  }
+  .case_menu .sidebar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .case_menu .sidebar-logo .logo-name img {
+    display: block;
+    width: 40%;
+    margin-left: 10px;
+  }
+  .sidebar-logo i,
+  .case_menu .bx-menu {
+    font-size: 25px;
+    color: red;
+  }
+  .case_menu .wapper {
+    display: block;
+    margin-top: 20px;
+  }
+  /* //ssssssssssssssssssssssssssssssssssssss */
+  .firt_sidebar {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+  }
+  .case-text .title p {
+    font-size: 30px;
+    font-family: "Bayon";
+    font-weight: 700;
+  }
+  .case-text .title2 p {
+    font-size: 13px;
+    font-family: "battambang";
+    font-weight: 200;
+  }
+  .firt_sidebar .soda_img img {
+    display: none;
+  }
+  .case-text .text_bottom a {
+    font-size: 15px;
+    font-family: "battambang";
+    font-weight: 600;
+  }
+  /* ffffffffffffffffffffffffff */
+  .case_soda {
+    display: block;
+    width: 95%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+  .case_soda .img_watesoda img {
+    width: 95%;
+  }
+  .aletf {
+    position: absolute;
+    text-align: left;
+    margin: auto;
+    background-color: gray;
+    width: 60px;
+    border-radius: 0px 5px 50px;
+    box-shadow: 5px 5px 10px var(--color_ping);
+  }
+  .aletf p {
+    font-size: 10px;
+    font-weight: 700;
+    padding: 10px 20px;
+    font-family: cursive;
+    color: aliceblue;
+  }
+  .case_soda .iconlemon .number1 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .case_soda .iconlemon .number1 p {
+    font-size: 10px;
+    font-family: "battambang";
+    font-weight: 600;
+  }
+  .iconlemon {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+  .case_soda .iconlemon .number1 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Courier New", Courier, monospace;
+  }
+  .case_soda .iconlemon .number1 p {
+    font-size: 10px;
+    font-family: "battambang";
+    font-weight: 600;
+  }
+  /* desing srean buttom 2 */
+  .case_movon {
+    padding: 10px 20px;
+    width: 95%;
+    display: flex;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .caption_product .case_movon h3 {
+    font-size: 30px;
+    font-family: "Bayon";
+    font-weight: 700;
+  }
+  .caption_product .case_movon img {
+    width: 70px;
+    margin-left: 300px;
+  }
+  .caption_product .case_movon p {
+    font-size: 10px;
+    font-family: "battambang";
+    font-weight: 200;
+  }
+  .founder_buttom {
+    margin-top: 60px;
+    padding: 10px 15px;
+    width: 95%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .founder_buttom .asssec_buttomm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .asssec_buttomm .boxproduct {
+    background: #fff;
+    cursor: pointer;
+    flex-direction: column;
+    width: 200px;
+    border: 1px solid var(--bg--color);
+  }
+  .boxproduct:hover {
+    box-shadow: 5px 5px 5px var(--color-info-light);
+  }
+  .boxproduct .imgProduct img {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+  }
+  .textparagraph i {
+    color: yellowgreen;
+    font-size: 15px;
+  }
+  .textparagraph i span {
+    font-size: 7px;
+    font-family: cursive;
+    font-weight: 200;
+  }
+  .textparagraph .name_pruduct {
+    color: black;
+    font-size: 10px;
+    font-family: Georgia, serif;
+  }
+  .textparagraph .totalprice {
+    color: #e67e22;
+    font-size: 12px;
+    font-family: cursive;
+    margin-bottom: 3px;
+  }
+  .textparagraph .aboutMe a i {
+    font-size: 10px;
+    color: rgb(69, 98, 142);
+    font-weight: 600;
+    font-family: "Courier New", Courier, monospace;
+  }
+  /* /////////////dddddddddddddddddd */
+  .case_about .case_boxboutus {
+    justify-content: space-around;
+    display: block;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .case_boxboutus .casetext_about {
+    text-align: left;
+    padding: 0 30px;
+  }
+  .casetext_about .text_about {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "khmer";
+  }
+  .casetext_about .text2_about {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  .casetext_about button {
+    padding: 10px 10px;
+    background-color: #e67e22;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--color_ping);
+  }
+  .casetext_about button a {
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  /* about imgage */
+  .case_boxboutus .image1 img {
+    width: 300px;
+    height: 300px;
+  }
+  .case_boxboutus .image2 img {
+    width: 300px;
+    height: 250px;
+    box-shadow: 0px 5px 10px var(--backgroud_hover);
+    border: 2px solid black;
+  }
+  /* ourstory */
+  .ourstory {
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    padding: 10px 15px;
+    position: relative;
+  }
+  .ourstory .fotter_story {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-left: 35px;
+    justify-content: center;
+    align-items: center;
+  }
+  .fotter_story .box_outstoryimg {
+    background-color: white;
+    cursor: pointer;
+    flex-direction: column;
+    width: 300px;
+  }
+  .box_outstoryimg .image_outstory img {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 5px 10px var(--color_ping);
+    border: 1px solid black;
+  }
+  .text_ourstory p {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "khmer";
+  }
+  .image_outstory .title_img p {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  .text_dite p {
+    font-size: 7px;
+    font-weight: 100;
+  }
+  .text_dite button a {
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px 10px;
+    background-color: #e67e22;
+    border: 1px solid black;
+    box-shadow: 0 5px 10px chocolate;
+  }
+  .paragraph p {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "battambang";
+    margin-bottom: 10px;
+  }
+  /* //2222222222222222222222222222222 */
+  .box_sub {
+    width: 100%;
+    padding: 20px 30px;
+  }
+  .box_sub .text_recipes {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: "khmer";
+    color: darkblue;
+  }
+  .box_sub input {
+    font-size: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px var(--color_picker);
+  }
+  .box_sub button a {
+    font-size: 10px;
+    font-weight: 200;
+    font-family: "battambang";
+  }
+  /* //footer */
+  .footer_case {
+    background-color: #6f827d;
+    position: relative;
+    margin-top: 100px;
+    border: 2px solid black;
+    width: 100%;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+  }
+  .case_website .paragrah_footer {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: "battambang";
+    color: white;
+  }
+  .case_website .footer_icon a i {
+    font-size: 15px;
+    color: rgb(249, 243, 248);
+    background-color: rgb(47, 56, 180);
+    border-radius: 50px;
+    padding: 5px 5px;
+    margin-right: 5px;
+  }
+  .box_menuleft {
+    padding: 0px 20px;
+  }
+  .case_cotact {
+    width: 100%;
+    justify-content: center;
+    text-align: left;
+    margin-top: 30px;
+  }
+  .box_menuleft h1 {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: "battambang";
+    color: white;
+  }
+  .box_menuleft a p {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 5px;
+    font-family: "battambang";
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  .box_menuleft a p:hover {
+    box-shadow: 0 10px 5px coral;
+  }
+  .box_menuright h1 {
+    font-size: 15px;
+    font-weight: 200;
+    font-family: "battambang";
+    color: white;
+  }
+  .box_menuright a i {
+    display: flex;
+    font-size: 15px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: rgb(48, 19, 164);
+  }
+  .box_menuright a i p {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 5px;
+    font-family: "battambang";
+    margin-bottom: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+}
