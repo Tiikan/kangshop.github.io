@@ -1236,14 +1236,24 @@ body {
     margin-top: 20px;
   }
   /* //ssssssssssssssssssssssssssssssssssssss */
+  
   .firt_sidebar {
     display: flex;
     width: 95%;
+    background-color: #17a589;
     margin: auto;
     padding: 0;
     text-align: left;
     justify-content: center;
     align-items: center;
+  }
+  .case-text {
+    background-image: url("https://img.freepik.com/free-vector/lemons-isolated-white-fresh-juicy-yellow-fruits-cut-half-whole_88138-132.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0px;
+    height: 300px;
   }
   .case-text .title p {
     font-size: 30px;
